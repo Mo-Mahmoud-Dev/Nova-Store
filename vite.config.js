@@ -18,6 +18,16 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    // Vite 8 uses Rolldown. Strip leading "_" from chunk names so that
+    // GitHub Pages (Jekyll) never ignores them.
+    rolldownOptions: {
+      output: {
+        chunkFileNames: (chunk) =>
+          `assets/${chunk.name.replace(/^_+/, '')}-[hash].js`,
+      },
+    },
+  },
   css: {
     preprocessorOptions: {
       scss: {
