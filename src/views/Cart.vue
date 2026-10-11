@@ -4,7 +4,7 @@
     <header class="cart-head">
       <div>
         <p class="crumbs">
-          <RouterLink to="/">Home</RouterLink> / <RouterLink to="/products">Shop</RouterLink> /
+          <RouterLink :to="{ name: 'home' }">Home</RouterLink> / <RouterLink to="/products">Shop</RouterLink> /
           <strong>Shopping bag</strong>
         </p>
         <div class="title-row">

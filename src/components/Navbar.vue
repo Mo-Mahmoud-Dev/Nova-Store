@@ -16,7 +16,7 @@
 
     <div class="navbar__main">
       <div class="navbar__container">
-        <RouterLink to="/" class="navbar__brand" @click="closeMenu">
+        <RouterLink :to="{ name: 'home' }" class="navbar__brand" @click="closeMenu">
           <span class="navbar__brand-text">Nova Store</span>
         </RouterLink>
 
@@ -27,7 +27,7 @@
           aria-label="Main navigation"
           @click="closeMenu"
         >
-          <RouterLink to="/" class="navbar__link">Home</RouterLink>
+          <RouterLink :to="{ name: 'home' }" class="navbar__link">Home</RouterLink>
           <RouterLink to="/Products" class="navbar__link">Shop</RouterLink>
           <RouterLink :to="{ path: '/Products', query: { filter: 'men' } }" class="navbar__link">Men</RouterLink>
           <RouterLink :to="{ path: '/Products', query: { filter: 'women' } }" class="navbar__link">Women</RouterLink>

@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="head">
       <p class="crumbs">
-        <RouterLink to="/">Home</RouterLink> / <strong>Contact us</strong>
+        <RouterLink :to="{ name: 'home' }">Home</RouterLink> / <strong>Contact us</strong>
       </p>
       <h1>Contact us</h1>
       <p class="lede">

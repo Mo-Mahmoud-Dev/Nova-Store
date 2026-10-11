@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="policy-header">
       <p class="breadcrumb">
-        <RouterLink to="/">Home</RouterLink> / Privacy Policy
+        <RouterLink :to="{ name: 'home' }">Home</RouterLink> / Privacy Policy
       </p>
       <h1>Privacy Policy</h1>
       <p class="subtitle">

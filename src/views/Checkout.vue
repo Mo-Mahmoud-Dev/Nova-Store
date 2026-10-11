@@ -3,7 +3,7 @@
     <header class="co-head">
       <div>
         <p class="crumbs">
-          <RouterLink to="/">Home</RouterLink> / <RouterLink to="/cart">Bag</RouterLink> /
+          <RouterLink :to="{ name: 'home' }">Home</RouterLink> / <RouterLink to="/cart">Bag</RouterLink> /
           <strong>Checkout</strong>
         </p>
         <h1>Checkout</h1>
