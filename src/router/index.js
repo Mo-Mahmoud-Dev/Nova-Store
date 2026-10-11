@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 import DefaultLayout from "../layouts/DefaultLayout.vue";
 import AuthLayout from "../layouts/AuthLayout.vue";
@@ -63,7 +63,7 @@ const routes = [
         meta: { title: "Checkout" },
       },
       {
-        path: "/order-confirmation",
+        path: "order-confirmation",
         name: "order-confirmation",
         component: () => import("@/views/OrderConfirmation.vue"),
         meta: { title: "Order Confirmed" },
@@ -81,13 +81,13 @@ const routes = [
         meta: { title: "Privacy Policy" },
       },
       {
-        path: '/terms-of-service',
+        path: 'terms-of-service',
         name: 'terms-of-service',
         component: () => import('@/views/TermsOfService.vue'),
         meta: { title: "Terms Of Service" },
       },
       {
-        path: '/contact-us',
+        path: 'contact-us',
         name: 'contact-us',
         component: () => import('@/views/ContactUs.vue'),
         meta: { title: "Contact Us" },
@@ -119,7 +119,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) return savedPosition;
