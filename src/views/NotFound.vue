@@ -6,7 +6,7 @@
       <!-- Left Panel -->
       <div class="content__left">
         <div class="illustration-wrapper">
-          <img class="illustration" src="/public/SeekerNotFoundPage.png" alt="Seeker">
+          <img class="illustration" :src="$base + 'SeekerNotFoundPage.png'" alt="Seeker">
         </div>
       </div>
 

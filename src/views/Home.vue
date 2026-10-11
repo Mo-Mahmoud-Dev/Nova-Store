@@ -39,7 +39,7 @@
 
       <!-- Right: Image -->
       <div class="hero-image-wrap">
-        <img src="/heroSectionManPhoto.webp" alt="Model wearing tailored minimalist wardrobe" class="hero-image" />
+        <img :src="$base + 'heroSectionManPhoto.webp'" alt="Model wearing tailored minimalist wardrobe" class="hero-image" />
 
         <div class="hero-promo-badge">
           <span class="promo-label">Special Release</span>
@@ -75,7 +75,7 @@
 
         <RouterLink to="/products?filter=men" class="category-card">
           <div class="category-image-wrap">
-            <img src="/man1.png" alt="Men" class="category-image" />
+            <img :src="$base + 'man1.png'" alt="Men" class="category-image" />
           </div>
           <div class="category-info">
             <div class="category-info-text">
@@ -88,7 +88,7 @@
 
         <RouterLink to="/products?filter=women" class="category-card">
           <div class="category-image-wrap">
-            <img src="/woman1.png" alt="Women" class="category-image" />
+            <img :src="$base + 'woman1.png'" alt="Women" class="category-image" />
           </div>
           <div class="category-info">
             <div class="category-info-text">
@@ -101,7 +101,7 @@
 
         <RouterLink to="/products?filter=shoes" class="category-card">
           <div class="category-image-wrap">
-            <img src="/Shoe.png" alt="Shoes" class="category-image" />
+            <img :src="$base + 'Shoe.png'" alt="Shoes" class="category-image" />
           </div>
           <div class="category-info">
             <div class="category-info-text">
@@ -114,7 +114,7 @@
 
         <RouterLink to="/products?filter=accessories" class="category-card">
           <div class="category-image-wrap">
-            <img src="/bag.png" alt="Accessories" class="category-image" />
+            <img :src="$base + 'bag.png'" alt="Accessories" class="category-image" />
           </div>
           <div class="category-info">
             <div class="category-info-text">
@@ -191,7 +191,7 @@
   </section>
   <section class="hero-banner">
     <div class="bg-parent">
-      <img src="/background.png" alt="banner">
+      <img :src="$base + 'background.png'" alt="banner">
     </div>
     <div class="parent-content">
       <div class="badge">
