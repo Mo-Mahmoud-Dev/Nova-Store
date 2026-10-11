@@ -1,1 +1,0 @@
-import{l as e}from"./index-BfH0aqJb.js";var t=`last-order`,n=e(`order`,{state:()=>({lastOrder:JSON.parse(sessionStorage.getItem(t)||`null`)}),actions:{setLastOrder(e){this.lastOrder=e;try{sessionStorage.setItem(t,JSON.stringify(e))}catch{}}}});export{n as t};
